@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+			body {
+				line-height: 1.2;
+				font-family: 'Poppins', sans-serif;
+				color: darkblue;
+				background-color: whitesmoke;
+			}
+
+			.head {
+				text-align: center;
+			}
+
+			.head h1 {
+				font-size: 40px;
+			}
+
+			.head p {
+				font-size: 20px;
+			}
+
+			.head button {
+				border-radius: 30px;
+				font-family: 'Poppins', sans-serif;
+				font-size: 20px;
+				padding: 10px 30px;
+				border: none;
+				background-color: darkblue;
+				color: whitesmoke;
+			}
+
+			.head button:hover{
+				background-color: orange;
+				border: none;
+				color: white;
+				cursor: pointer;
+				font-family: 'Poppins', sans-serif;
+			}
+
+			#result{
+				margin-top: 150px;
+				font-size: 35px;
+				background-color: whitesmoke;
+				color: darkblue;
+				font-family: 'Poppins', sans-serif;
+				text-align: center;
+			}
+			
+		</style>
+		<script>
+			function switch_statement() {
+				let message = prompt("Enter Today's Day: ")
+				switch (message) {
+					case 'Monday':
+						document.getElementById("result").innerText = "Today you need to play Games.";
+
+						break;
+
+					case 'Tuesday':
+					document.getElementById("result").innerText = "Today you need to buy Groceries.";
+
+						break;
+
+					case 'Wednesday':
+					document.getElementById("result").innerText = "Today you need to study.";
+
+						break;
+
+					case 'Thursday':
+					document.getElementById("result").innerText = "Today you need to clean your House.";
+
+						break;
+
+					case 'Friday':
+					document.getElementById("result").innerText = "Today you need to attend Jummah.";
+
+						break;
+
+					case 'Saturday':
+					document.getElementById("result").innerText = "Today you need to visit Noor Mehal.";
+
+						break;
+
+					case 'Sunday':
+					document.getElementById("result").innerText = "Today you need to Rest and Enjoy.";
+
+						break;
+
+					default:
+						prompt("Enter Today's Day.")
+
+						break;
+
+				}
+			}
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Switch Statement in JavaScript</title>
+	</head>
+	<body>
+		<div class="head">
+			<h1>Switch Statement in JavaScript</h1>
+			<p>Click the button below to start!</p>
+			<button onclick="switch_statement()">Click to Start!</button>
+		</div>
+		<h1 id="result"></h1>
+	</body>
+</html>
